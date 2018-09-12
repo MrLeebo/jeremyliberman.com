@@ -9,7 +9,7 @@ In React, HOCs (Higher Order Components) are a really good way to compartmentali
 Until recently, as I was working on a component that needed to be enhanced, I would usually create a new component to be responsible for the application with regard to that HOC. For example, if I have a <code>ProfilePage</code> and I wanted to add a form to it, I would create a new <code>ProfileForm</code> component that would be enhanced by `reduxForm`:
 
 ``` jsx
-export class ProfileForm extens React.Component {
+export class ProfileForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.props.handleSubmit}>
