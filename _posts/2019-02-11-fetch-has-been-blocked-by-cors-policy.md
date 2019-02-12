@@ -98,7 +98,7 @@ If your API is public and has no authentication, or client-side JavaScript is ho
 
 ### Does this only affect `fetch`? What if I use `axios` or something else?
 
-CORS policies are enforced by all modern web browsers, regardless of what flavor of web client you use. CORS policies won't affect requests from non-XHR sources, such as `<form>` actions, or the src attributes of `<img>`, `<iframe>` or `<script>` tags.
+CORS policies are enforced by all modern web browsers, regardless of what flavor of web client you use. CORS policies won't affect requests from non-XHR sources, such as `<form>` actions. CORS won't apply to `<img>` or `<script>` tags unless you set the [crossorigin](https://devdocs.io/html/cors_settings_attributes){:target="_blank"} attribute.
 
 ### What about the `no-cors` option?
 
