@@ -44,7 +44,7 @@ fetch("https://www.metaweather.com/api/location/2430683/")
 */
 ```
 
-[CORS](https://devdocs.io/http/cors){:target="_blank"} stands for Cross-Origin Resource Sharing. If we break that term down, it's a bit like saying "how different websites agree to share data with each other". See, that's not so bad. When you get a CORS policy error, it's because the website (origin) you were trying to fetch from didn't permit its data to be shared with the website that executed the JavaScript. If the server doesn't provide any rules for who it will share with, your browser will assume the worst and will block the request.
+[CORS](https://devdocs.io/http/cors){:target="_blank"} stands for Cross-Origin Resource Sharing. If we break that term down, it's a bit like saying "how different websites agree to share data with each other". See, that's not so bad. When you get a CORS policy error, it's because the website you were trying to fetch from (the "at" URL in the snippet above) didn't permit its data to be shared with the website that executed the JavaScript (the "origin" URL in the same snippet). If the server doesn't provide any rules for who it will share with, your browser will assume the worst and will block the request.
 
 ### So why don't all origins allow sharing by default?
 
