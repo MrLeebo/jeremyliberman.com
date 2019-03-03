@@ -1,5 +1,6 @@
 ---
 title: "Selenium Option Locators: Deciphering “@see #doSelect for details of option locators”"
+description: "I take a look into Selenium's source code to resolve a confusing error message and find a workaround for selecting all of the options in a multi-select dropdown control."
 date: 2013-03-23
 ---
 

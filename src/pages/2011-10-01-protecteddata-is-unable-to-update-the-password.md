@@ -1,5 +1,6 @@
 ---
 title: "ProtectedData is unable to update the password?"
+description: "Why does the System.Security.Cryptography library sometimes ask you to update your password when using DataProtectionScope.LocalMachine? Let's find out."
 date: 2011-10-01
 ---
 

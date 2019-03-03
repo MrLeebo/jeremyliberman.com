@@ -1,5 +1,6 @@
 ---
 title: "Is your Javascript waiting on multiple Backbone fetches?"
+description: "We talk about using the jQuery Promise implementation to simplify some callback-centric logic by converting it into Promises."
 date: 2013-03-16
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Blissfully Reactive Bootstrap3 Tooltips with Meteor Templates"
+description: "I can teach you how to automatically update your tooltips when a label changes."
 date: 2014-08-10
 ---
 

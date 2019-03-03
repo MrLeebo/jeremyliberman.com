@@ -8,6 +8,7 @@ import Byline from "../components/byline";
 export default function Template(props) {
   const {
     title,
+    description,
     date,
     timeToRead,
     html,
@@ -34,7 +35,7 @@ export default function Template(props) {
 
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} description={description} />
       <div className="pa2">
         <div>
           <div className="db dn-ns">

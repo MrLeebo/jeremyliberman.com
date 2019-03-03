@@ -14,7 +14,7 @@ export default function IndexPage() {
       <SEO title="Home" />
 
       <ul className="list mh1 mh2-ns">
-        {posts.map(({ id, title, slug, excerpt, timeToRead, date }) => (
+        {posts.map(({ id, title, slug, description, timeToRead, date }) => (
           <li key={id} className="mt4-ns">
             <Link to={slug} className="db">
               {title}
@@ -24,12 +24,8 @@ export default function IndexPage() {
             <div className="mt3">
               <div
                 className="f5"
-                dangerouslySetInnerHTML={{ __html: excerpt }}
+                dangerouslySetInnerHTML={{ __html: description }}
               />
-
-              <Link to={slug} className="f6">
-                Keep Reading
-              </Link>
             </div>
           </li>
         ))}

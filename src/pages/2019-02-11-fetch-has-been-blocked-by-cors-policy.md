@@ -1,5 +1,6 @@
 ---
 title: "Fetch has been blocked by CORS policy"
+description: "This is a high-level primer on what CORS policies are, and a FAQ answering common issues people experience related to CORS."
 date: 2019-02-11
 ---
 
@@ -32,7 +33,7 @@ Our intrepid protagonist has encountered a CORS policy error. If you've found th
 
 ```js
 // Fetch the weather conditions in Kansas City, Missouri
-fetch("https://www.metaweather.com/api/location/2430683/")
+fetch("https://www.metaweather.com/api/location/2430683/");
 
 /* Error:
   Access to fetch at 'https://www.metaweather.com/api/location/2430683/'

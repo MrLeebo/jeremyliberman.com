@@ -1,5 +1,6 @@
 ---
 title: "Greetings"
+description: "First blog post, ever!"
 date: 2011-09-18
 ---
 

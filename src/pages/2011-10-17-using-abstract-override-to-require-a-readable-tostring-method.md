@@ -1,5 +1,6 @@
 ---
 title: "Using Abstract Override to require a readable ToString Method"
+description: "Are you tired of all of your objects being named simply "Object"? You can make ToString() an abstract override method in your abstract class in order to force implementation classes to always provider an implementation for logging purposes."
 date: 2011-10-17
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "New Site Design!"
+description: "jeremyliberman.com has been rewritten using Gatsby!"
 date: 2019-03-03
 ---
 

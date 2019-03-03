@@ -1,5 +1,6 @@
 ---
 title: "The pitfalls of enumerating with forEach()"
+description: "Array's forEach() is a popular way of enumerating lists in JavaScript, but I never recommend using it due to these drawbacks."
 date: 2019-02-14
 ---
 

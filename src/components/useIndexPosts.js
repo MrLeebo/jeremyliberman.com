@@ -12,9 +12,9 @@ export default function useIndexPosts() {
             node {
               id
               timeToRead
-              excerpt(format: HTML, pruneLength: 500)
               frontmatter {
                 title
+                description
                 date(formatString: "MMMM DD, YYYY")
               }
               fields {
@@ -30,9 +30,9 @@ export default function useIndexPosts() {
   return allMarkdownRemark.edges.map(({ node }) => ({
     id: node.id,
     timeToRead: node.timeToRead,
-    excerpt: node.excerpt,
     slug: node.fields.slug,
     title: node.frontmatter.title,
+    description: node.frontmatter.description,
     date: node.frontmatter.date
   }));
 }

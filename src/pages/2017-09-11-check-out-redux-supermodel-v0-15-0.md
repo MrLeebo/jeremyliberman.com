@@ -1,5 +1,6 @@
 ---
 title: "Check out redux-supermodel v0.15.0!"
+description: "Everyone who builds React apps struggles with data fetching. A new version of my React/Redux data fetching library is out."
 date: 2017-09-11
 ---
 

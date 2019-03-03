@@ -1,5 +1,6 @@
 ---
 title: "Turn your React HOCs into Providers"
+description: "Providers are an easy enhancement you can make to any existing Higher Order Component (HOC) to make it even more flexible."
 date: 2018-09-11
 ---
 
@@ -10,11 +11,11 @@ Until recently, as I was working on a component that needed to be enhanced, I wo
 ```jsx
 export class ProfileForm extends React.Component {
   render() {
-    return <form onSubmit={this.props.handleSubmit}>...</form>
+    return <form onSubmit={this.props.handleSubmit}>...</form>;
   }
 }
 
-export default reduxForm({ form: "profileForm" })(ProfileForm)
+export default reduxForm({ form: "profileForm" })(ProfileForm);
 ```
 
 This is fine, but over time it presents a couple of drawbacks:
@@ -42,10 +43,10 @@ HOCs tend to enhance components by passing props to them that let you interact w
 A Provider is child function component, or a component that takes a function as its `children` prop. You can express any HOC as a Provider, take for instance `redux-form`'s HOC:
 
 ```jsx
-import { reduxForm } from "redux-form"
+import { reduxForm } from "redux-form";
 
-const toRenderProp = ({ children, ...rest }) => children(rest)
-const FormProvider = reduxForm()(toRenderProp)
+const toRenderProp = ({ children, ...rest }) => children(rest);
+const FormProvider = reduxForm()(toRenderProp);
 ```
 
 So how does `ProfilePage` look if we use our FormProvider now?
@@ -61,7 +62,7 @@ class ProfilePage extends React.Component {
       >
         {formProps => <form onSubmit={formProps.handleSubmit}>...</form>}
       </FormProvider>
-    )
+    );
   }
 }
 ```

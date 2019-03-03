@@ -1,5 +1,6 @@
 ---
 title: "Receiving Email Notifications for Report Processing Exceptions in SSRS"
+description: "SSRS reports do not make it easy for developers to detect and log runtime errors, so I wrote a PowerShell script to notify myself when they occur."
 date: 2013-10-23
 ---
 

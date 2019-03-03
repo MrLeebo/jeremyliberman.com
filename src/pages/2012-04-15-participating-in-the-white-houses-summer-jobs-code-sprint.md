@@ -1,5 +1,6 @@
 ---
 title: "Participating in the White House’s Summer Jobs+ Code Sprint"
+description: "This post is a story about an application I never built and why."
 date: 2012-04-15
 ---
 
@@ -9,7 +10,7 @@ Two weeks ago I read about the [Code Sprint](http://www.whitehouse.gov/codesprin
 
 Two weeks ago, I read the post on the White House’s [blog](http://www.whitehouse.gov/blog/) challenging developers to participate in the code sprint. And it’s not like I make a habit of reading a blog about the residence of the first family and looking for programmer stuff–I had been directed there by an article about the code sprint from the [Associated Press](http://www.ap.org/).
 
-My coworkers helped me brainstorm the initial idea for the proejct, which was to connect the job listings from the [Summer Jobs+ Bank](http://www.dol.gov/summerjobs/) with the NYC public transportation information available through [NYC OpenData](https://nycopendata.socrata.com/). I wanted to make the assumption that there would be youths that would not have access to a car and needed information about job listings that would be “within walking distance of your house” or “this is the bus route you would take”.
+My coworkers helped me brainstorm the initial idea for the project, which was to connect the job listings from the [Summer Jobs+ Bank](http://www.dol.gov/summerjobs/) with the NYC public transportation information available through [NYC OpenData](https://nycopendata.socrata.com/). I wanted to make the assumption that there would be youths that would not have access to a car and needed information about job listings that would be “within walking distance of your house” or “this is the bus route you would take”.
 
 I know it seems a little weird for a dude based out of Kansas City, Missouri who has never even been to New York to select this kind of project. However, I was already aware of NYC’s efforts to provide a great deal of city information to the public through the OpenData project, including up-to-date statistics on bus and subway routes. New York City seemed like a good city to set up a demonstration and, if the idea had traction, more cities could be added over time.
 

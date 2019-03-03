@@ -1,5 +1,6 @@
 ---
 title: "Git Rebase destroyed your commit? Reflog to the Rescue!"
+description: "In git, nothing is ever truly lost. You can recover dropped commits and undo botched merges using git reflog."
 date: 2013-03-02
 ---
 

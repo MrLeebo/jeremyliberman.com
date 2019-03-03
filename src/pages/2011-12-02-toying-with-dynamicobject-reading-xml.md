@@ -1,5 +1,6 @@
 ---
 title: "Toying with DynamicObject: Reading XML"
+description: "A demonstration of dynamics in C# and using them to navigate an XML structure."
 date: 2011-12-02
 ---
 
