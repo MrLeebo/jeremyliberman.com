@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
           <div className="fixed left-0 top-1 w-20 measure-narrow pr3 dn db-l">
             <Header siteTitle={data.site.siteMetadata.title} />
           </div>
-          <div className="center avenir w-60-l f3 measure lh-copy">
+          <div className="center avenir w-60-l f3 measure-wide lh-copy">
             <main>{children}</main>
           </div>
         </div>
