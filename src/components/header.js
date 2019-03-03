@@ -1,15 +1,15 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
 
-import useRecentPosts from "./useRecentPosts"
+import useRecentPosts from "./useRecentPosts";
 
 export default function Header({ siteTitle }) {
-  const posts = useRecentPosts()
+  const posts = useRecentPosts();
 
   return (
     <header className="f3 mt4 bg-near-black white pa3 br2 br--right avenir">
-      <Link to="/" className="f2 lh-title white avenir">
+      <Link to="/" className="f3 lh-title white avenir">
         {siteTitle}
       </Link>
       <p className="mt3 f4 light-gray">
@@ -48,13 +48,13 @@ export default function Header({ siteTitle }) {
         </a>
       </div>
     </header>
-  )
+  );
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};

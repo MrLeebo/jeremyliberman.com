@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { Helmet } from "react-helmet"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           bodyAttributes={{
-            class: "bg-washed-yellow",
+            class: "bg-washed-yellow"
           }}
         >
           <link
@@ -38,20 +38,20 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <div className="cf">
-          <div className="fixed left-0 top-1 w-20 pr3">
+          <div className="fixed left-0 top-1 w-20 pr3 dn db-l">
             <Header siteTitle={data.site.siteMetadata.title} />
           </div>
-          <div className="ph4 center avenir f3 measure-wide lh-copy">
+          <div className="ph5 ph4-l center avenir w-70-l f3 measure lh-copy">
             <main>{children}</main>
           </div>
         </div>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

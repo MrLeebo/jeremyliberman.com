@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Byline from "../components/byline"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Byline from "../components/byline";
 
 export default function Template(props) {
   const {
@@ -13,8 +13,8 @@ export default function Template(props) {
     html,
     slug,
     previous,
-    next,
-  } = props.pageContext
+    next
+  } = props.pageContext;
 
   const nav = (
     <div className="f5">
@@ -30,7 +30,7 @@ export default function Template(props) {
         </span>
       )}
     </div>
-  )
+  );
 
   return (
     <Layout>
@@ -40,7 +40,7 @@ export default function Template(props) {
           {nav}
 
           <div>
-            <Link className="mt4 mb0 f2 black" to={slug}>
+            <Link className="mt4-l mb0 f4 f2-l black" to={slug}>
               {title}
             </Link>
           </div>
@@ -53,5 +53,5 @@ export default function Template(props) {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
