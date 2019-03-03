@@ -40,8 +40,8 @@ module.exports = {
         name: `Jeremy Liberman's Blog`,
         short_name: `MrLeebo's Blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fffceb`,
+        theme_color: `#fffceb`,
         display: `minimal-ui`,
         icon: `src/images/avatar.png`, // This path is relative to the root of the site.
         include_favicon: true
