@@ -11,7 +11,10 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title="Blog Index"
+        description="Using computer technology to solve people problems"
+      />
 
       <ul className="list mh1 mh2-ns">
         {posts.map(({ id, title, slug, description, timeToRead, date }) => (
@@ -19,7 +22,6 @@ export default function IndexPage() {
             <Link to={slug} className="db">
               {title}
             </Link>{" "}
-            {/*&middot; {timeToRead}m read*/}
             <Byline date={date} timeToRead={timeToRead} />
             <div className="mt3">
               <div
