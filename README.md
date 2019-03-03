@@ -3,6 +3,8 @@
   Jeremy Liberman's Blog
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffcc2a54-374a-4361-a5ee-0d1a8e5786b5/deploy-status)](https://app.netlify.com/sites/jeremyliberman/deploys)
+
 This is my personal blog. If you find a mistake in a post, feel free to open a pull request.
 
 ## 🚀 Quick start
