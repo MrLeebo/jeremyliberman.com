@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function useIndexPosts() {
   const { allMarkdownRemark } = useStaticQuery(
@@ -10,6 +10,7 @@ export default function useIndexPosts() {
         ) {
           edges {
             node {
+              id
               timeToRead
               excerpt(format: HTML, pruneLength: 500)
               frontmatter {
@@ -24,7 +25,7 @@ export default function useIndexPosts() {
         }
       }
     `
-  )
+  );
 
   return allMarkdownRemark.edges.map(({ node }) => ({
     id: node.id,
@@ -32,6 +33,6 @@ export default function useIndexPosts() {
     excerpt: node.excerpt,
     slug: node.fields.slug,
     title: node.frontmatter.title,
-    date: node.frontmatter.date,
-  }))
+    date: node.frontmatter.date
+  }));
 }
