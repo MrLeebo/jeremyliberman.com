@@ -1,21 +1,21 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Byline from "../components/byline"
-import useIndexPosts from "../components/useIndexPosts"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Byline from "../components/byline";
+import useIndexPosts from "../components/useIndexPosts";
 
 export default function IndexPage() {
-  const posts = useIndexPosts()
+  const posts = useIndexPosts();
 
   return (
     <Layout>
       <SEO title="Home" />
 
-      <ul className="list">
+      <ul className="list mh1 mh2-ns">
         {posts.map(({ id, title, slug, excerpt, timeToRead, date }) => (
-          <li key={id} className="mt4">
+          <li key={id} className="mt4-ns">
             <Link to={slug} className="db">
               {title}
             </Link>{" "}
@@ -35,5 +35,5 @@ export default function IndexPage() {
         ))}
       </ul>
     </Layout>
-  )
+  );
 }

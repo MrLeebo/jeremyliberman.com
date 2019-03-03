@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The pitfalls of enumerating with forEach()"
 date: 2019-02-14
 ---
@@ -18,7 +17,7 @@ There are a lot of ways to enumerate a list in JavaScript. To name a few, there'
 
 ```js
 for (let i = 0; i < list.length; i++) {
-  console.log(list[i])
+  console.log(list[i]);
 }
 ```
 
@@ -26,7 +25,7 @@ The modern `for..of` loop:
 
 ```js
 for (const item of list) {
-  console.log(item)
+  console.log(item);
 }
 ```
 
@@ -34,24 +33,24 @@ The older `for..in` loop:
 
 ```js
 for (const i in list) {
-  console.log(list[i])
+  console.log(list[i]);
 }
 ```
 
 The `while` loop:
 
 ```js
-const iter = list[Symbol.iterator]()
-let n
+const iter = list[Symbol.iterator]();
+let n;
 while (((n = iter.next()), !n.done)) {
-  console.log(n.value)
+  console.log(n.value);
 }
 ```
 
 And of course, `forEach`:
 
 ```js
-list.forEach(console.log)
+list.forEach(console.log);
 ```
 
 Now, when you set them side-by-side like this, it's easy to see why a lot of junior developers will prefer the `forEach()` syntax. At first glance, it looks shorter, cleaner, easier to remember. However, there are a number of concerns you should be aware of:
@@ -71,11 +70,11 @@ Regardless of whether you return a value in your callback function, `forEach()` 
 ```js
 // instead of
 const result = [][(1, 2, 3, 4)].forEach(num => {
-  result.push(Math.pow(num, 2))
-})
+  result.push(Math.pow(num, 2));
+});
 
 // try
-const result = [1, 2, 3, 4].map(num => Math.pow(num, 2))
+const result = [1, 2, 3, 4].map(num => Math.pow(num, 2));
 ```
 
 With `.map()` each value in the input array will be replaced by the value returned by the callback in the output array. So you'll have a one-to-one symmetry between your input and output.
@@ -85,11 +84,11 @@ With `.map()` each value in the input array will be replaced by the value return
 ```js
 // instead of
 const evens = [][(1, 2, 3, 4)].forEach(num => {
-  if (num % 2 === 0) evens.push(num)
-})
+  if (num % 2 === 0) evens.push(num);
+});
 
 // try
-const evens = [1, 2, 3, 4].filter(num => num % 2 === 0)
+const evens = [1, 2, 3, 4].filter(num => num % 2 === 0);
 ```
 
 You can use `.filter` to match each value in the arraya against a conditional check, and only return the values that pass the check. The resulting array will have as many or fewer items in it than the input array.
@@ -99,11 +98,11 @@ You can use `.filter` to match each value in the arraya against a conditional ch
 ```js
 // instead of
 let total = (0)[(1, 2, 3, 4)].forEach(num => {
-  total += num
-})
+  total += num;
+});
 
 // try
-const total = [1, 2, 3, 4].reduce((add, num) => add + num)
+const total = [1, 2, 3, 4].reduce((add, num) => add + num);
 ```
 
 `.reduce()` is a function that bothers a lot of people, but in general you can think of it like this; use reduce to collapse an array into a single value. Aggregate functions like finding the sum total, the min/max, etc, are great candidates for reduce. You can also use it to construct a brand new object or array using the values of the input array. Like a `GROUP BY` statement in SQL.
@@ -119,13 +118,13 @@ In a typical `for` loop, you can use control flow statements like `break`, `cont
 function findName(list) {
   for (const item of list) {
     // skips to the next item in the list
-    if (item.skip) continue
+    if (item.skip) continue;
 
     // terminates the loop, no matter how many items remain
-    if (item.terminate) break
+    if (item.terminate) break;
 
     // if this item has a name, return it
-    if (item.name) return item.name
+    if (item.name) return item.name;
   }
 }
 ```

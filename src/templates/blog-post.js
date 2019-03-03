@@ -37,7 +37,10 @@ export default function Template(props) {
       <SEO title={title} />
       <div className="pa2">
         <div>
-          {nav}
+          <div className="db dn-ns">
+            <Link to="/">Jeremy Liberman</Link>
+          </div>
+          <div className="dn db-ns">{nav}</div>
 
           <div>
             <Link className="mt4-l mb0 f4 f2-l black" to={slug}>
