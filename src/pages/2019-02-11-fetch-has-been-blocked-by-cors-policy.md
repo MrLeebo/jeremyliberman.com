@@ -4,32 +4,7 @@ description: "This is a high-level primer on what CORS policies are, and a FAQ a
 date: 2019-02-11
 ---
 
-Today we're going to talk about CORS policy errors. Why they appear, and a few things you can do about them.
-
-I wrote this brief movie script as an introduction:
-
-INT. OFFICE:
-
-A software DEVELOPER appears to be struggling with a problem at her computer. The project on-screen is a single-page application. Soda cans and discarded poptarts wrappers are scattered around, as is their custom.
-
-<center>DEVELOPER</center>
-<center>(flustered)</center>
-<center>I don't get it. I've never had this issue in my server-rendered templates.</center>
-
-<div><div style="float: right;">CUT TO:</div><br/></div>
-DEVELOPER POV:
-
-The computer monitor is aglow with HTML and JAVASCRIPT. None of the syntax is correct because this is [HOLLYWOOD](https://www.youtube.com/watch?v=u8qgehH3kEQ). There is a loud POP as DEVELOPER opens a fresh can of Dr. Pepper. At the bottom of the screen, a debugger has logged an error in red text.
-
-<center>DEVELOPER</center>
-<center>I only wanted to make a call to my API. Why is this happening?</center>
-<br/>
-<br/>
-<img src="/assets/CorsError.png" alt="Example of a CORS error">
-<center>Hitchcock, eat your heart out</center>
-<hr>
-
-Our intrepid protagonist has encountered a CORS policy error. If you've found this post, then there's a chance you have too. They crop up sometimes when you try to fetch data from an API in your JavaScript application.
+Today we're going to talk about CORS policy errors. Why they appear, and a few things you can do about them. CORS errors crop up sometimes when you try to fetch data from an API in your JavaScript application.
 
 ```js
 // Fetch the weather conditions in Kansas City, Missouri
