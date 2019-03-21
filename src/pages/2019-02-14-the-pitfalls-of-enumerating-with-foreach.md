@@ -71,7 +71,7 @@ Regardless of whether you return a value in your callback function, `forEach()` 
 ```js
 // instead of
 const result = [];
-[(1, 2, 3, 4)].forEach(num => {
+[1, 2, 3, 4].forEach(num => {
   result.push(Math.pow(num, 2));
 });
 
@@ -86,7 +86,7 @@ With `.map()` each value in the input array will be replaced by the value return
 ```js
 // instead of
 const evens = [];
-[(1, 2, 3, 4)].forEach(num => {
+[1, 2, 3, 4].forEach(num => {
   if (num % 2 === 0) evens.push(num);
 });
 
@@ -101,7 +101,7 @@ You can use `.filter` to match each value in the arraya against a conditional ch
 ```js
 // instead of
 let total = 0;
-[(1, 2, 3, 4)].forEach(num => {
+[1, 2, 3, 4].forEach(num => {
   total += num;
 });
 
