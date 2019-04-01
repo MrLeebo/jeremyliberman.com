@@ -1,6 +1,7 @@
 ---
 title: 'How does "this" work in JavaScript?'
-description: `Not sure where JavaScript's context variable "this" comes from? Let's talk about it. As a bonus, we'll also talk about closures and arrow functions.`
+description: >-
+  Not sure where JavaScript's context variable "this" comes from? Let's talk about it. As a bonus, we'll also talk about closures and arrow functions.
 date: 2019-04-01
 ---
 
